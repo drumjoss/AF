@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FILTERGRAPH>
+  <FILTER uid="1" x="0.50000000000000000000" y="0.10000000000000000555">
+    <PLUGIN name="Audio Input" descriptiveName="" format="Internal" category="I/O devices"
+            manufacturer="ROLI Ltd." version="1.0" file="" uid="246006c0"
+            isInstrument="0" fileTime="0" infoUpdateTime="0" numInputs="0"
+            numOutputs="2" isShell="0"/>
+    <STATE>0.</STATE>
+    <LAYOUT>
+      <INPUTS>
+        <BUS index="0" layout="disabled"/>
+      </INPUTS>
+      <OUTPUTS>
+        <BUS index="0" layout="L R"/>
+      </OUTPUTS>
+    </LAYOUT>
+  </FILTER>
+  <FILTER uid="2" x="0.25000000000000000000" y="0.10000000000000000555">
+    <PLUGIN name="Midi Input" descriptiveName="" format="Internal" category="I/O devices"
+            manufacturer="ROLI Ltd." version="1.0" file="" uid="cb5fde0b"
+            isInstrument="0" fileTime="0" infoUpdateTime="0" numInputs="0"
+            numOutputs="0" isShell="0"/>
+    <STATE>0.</STATE>
+    <LAYOUT>
+      <INPUTS>
+        <BUS index="0" layout="disabled"/>
+      </INPUTS>
+      <OUTPUTS>
+        <BUS index="0" layout="disabled"/>
+      </OUTPUTS>
+    </LAYOUT>
+  </FILTER>
+  <FILTER uid="3" x="0.50000000000000000000" y="0.90000000000000002220">
+    <PLUGIN name="Audio Output" descriptiveName="" format="Internal" category="I/O devices"
+            manufacturer="ROLI Ltd." version="1.0" file="" uid="724248cb"
+            isInstrument="0" fileTime="0" infoUpdateTime="0" numInputs="2"
+            numOutputs="0" isShell="0"/>
+    <STATE>0.</STATE>
+    <LAYOUT>
+      <INPUTS>
+        <BUS index="0" layout="L R"/>
+      </INPUTS>
+      <OUTPUTS>
+        <BUS index="0" layout="disabled"/>
+      </OUTPUTS>
+    </LAYOUT>
+  </FILTER>
+  <FILTER uid="4" x="0.41499999999999998002" y="0.51411290322580649459">
+    <PLUGIN name="Sine Wave Synth" format="Internal" category="Synth" manufacturer="ROLI Ltd."
+            version="1.0.0" file="Sine Wave Synth:" uid="16fd76a8" isInstrument="1"
+            fileTime="0" infoUpdateTime="0" numInputs="0" numOutputs="2"
+            isShell="0"/>
+    <STATE>0.</STATE>
+    <LAYOUT>
+      <INPUTS/>
+      <OUTPUTS>
+        <BUS index="0" layout="L R"/>
+      </OUTPUTS>
+    </LAYOUT>
+  </FILTER>
+  <FILTER uid="6" x="0.46250000000000002220" y="0.68951612903225811824"
+          uiLastX_Normal="228" uiLastY_Normal="494" uiopen_Normal="0">
+    <PLUGIN name="Face Bender x64" descriptiveName="Face Bender" format="VST"
+            category="" manufacturer="Distorque" version="0.1.0.2" file="D:\JUCE\VstPlugins\Face Bender x64.dll"
+            uid="44514642" isInstrument="0" fileTime="135b9dfea90" infoUpdateTime="166e9ad6575"
+            numInputs="2" numOutputs="2" isShell="0"/>
+    <STATE>1276.CMlaKA....fQ3IzZ....APTTFID...P.....H...........................................................................................................................................................................CMlaKA....fQ3MzZ....APTTFID...P.....UXjQ..................................................vO.B..+....7CP..vO....+nBqZ+Cf........................+.D..7C...vOpvp1+.........................vPi41R.....XDdCsF...P.DEkQBA...D....PETID.......................................vO.B..+.H..7Cf..vO....+.D..7C...vOpvp1+.H.......................vO.A..+....7iJrp8O.........................LzXtsD.....Fg2PqA...D.QQYjP....A....TwS1UlbjIWZ1UF...................................vO.B..+.H..7C...vO.A.......7C...fOYlol.....3CSL2bOLyby9vDyM+CP........+nBqZ6SlYpI.....9vLyM2CyL2rOLwbyCMlaKA....fQ3MzZ....APTTFID...P.....UfTZfbTXo4F.................................+.H..7Cf..vO.B..+....7CP..vOLwby+nBqZ+Cf.............3SlYpI.....+.D..7CSL27Opvp1+...............9jYlZ5CSL27Pi41R.....XDdCsF...P.DEkQBA...D....PEI4VZzARM........................................+.H..7Cf..vO....+.D..7C...vOpvp1+.H.......................vO.A..+....7iJrp8O.........................LzXtsD.....Fg2PqA...D.QQYjP....A....TQRtkFcfXC.......................................vO.B..+.H..7C...vO.A..+....7iJrp8O.B.......................7CP..vO....+nBqZ+C.........................CMlaKA....fQ3MzZ....APTTFID...P.....UjjaoQGH2........................................7Cf..vO.B..+....7CP..vO....+nBqZ+Cf........................+.D..7C...vOpvp1+.........................vPi41R.....XDdCsF...P.DEkQBA...D....PEI4VZzABN........................................+.H..7Cf..vO....+.D..7C...vOpvp1+.H.......................vO.A..+....7iJrp8O..........................</STATE>
+    <LAYOUT>
+      <INPUTS>
+        <BUS index="0" layout="L R"/>
+      </INPUTS>
+      <OUTPUTS>
+        <BUS index="0" layout="L R"/>
+      </OUTPUTS>
+    </LAYOUT>
+  </FILTER>
+  <CONNECTION srcFilter="2" srcChannel="4096" dstFilter="4" dstChannel="4096"/>
+  <CONNECTION srcFilter="4" srcChannel="0" dstFilter="6" dstChannel="0"/>
+  <CONNECTION srcFilter="4" srcChannel="1" dstFilter="6" dstChannel="1"/>
+  <CONNECTION srcFilter="6" srcChannel="0" dstFilter="3" dstChannel="0"/>
+  <CONNECTION srcFilter="6" srcChannel="1" dstFilter="3" dstChannel="1"/>
+</FILTERGRAPH>
