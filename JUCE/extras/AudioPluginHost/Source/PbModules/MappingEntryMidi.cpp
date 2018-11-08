@@ -220,7 +220,7 @@ MappingEntryMidi::MappingEntryMidi (MappingsDialog *dlg, int arrayIndex, int cc,
 	rangeLabel->setInterceptsMouseClicks(false, true);
 
 	slider->setColour(MappingSlider::thumbColourId,
-					  getCurrentColourScheme().getUIColour(widgetBackground));
+		juce::getCurrentColourScheme().getUIColour(widgetBackground));
 
     //[/UserPreSize]
 
@@ -252,7 +252,7 @@ void MappingEntryMidi::paint (Graphics& g)
 {
     //[UserPrePaint] Add your own custom painting code here..
 
-	//g.setColour(ColourScheme::getInstance().colours[L"Vector Colour"]);
+	g.setColour(getCurrentColourScheme().getUIColour(widgetBackground));
 
     //[/UserPrePaint]
 

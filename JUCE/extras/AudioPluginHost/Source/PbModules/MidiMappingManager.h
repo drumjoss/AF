@@ -253,9 +253,9 @@ class MidiInterceptor : public AudioPluginInstance
 	///	Ignored.
 	void releaseResources() {};
 	///	We have no audio inputs.
-	const String getInputChannelName(int channelIndex) const {return L"";};
+	const String getInputChannelNames(int channelIndex) const {return L"";};
 	///	We have no audio outputs.
-	const String getOutputChannelName(int channelIndex) const {return L"";};
+	const String getOutputChannelNames(int channelIndex) const {return L"";};
 	///	We have no audio inputs.
 	bool isInputChannelStereoPair(int index) const {return false;};
 	///	We have no audio outputs.
