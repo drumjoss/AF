@@ -376,6 +376,9 @@
     <Filter Include="JUCE Library Code">
       <UniqueIdentifier>{7ED5A90E-41AF-A1EF-659B-37CEEAB9BA61}</UniqueIdentifier>
     </Filter>
+    <Filter Include="AudioPluginHost\Source\PbModules">
+      <UniqueIdentifier>{7faf2801-18d2-4448-81e8-b950c54aa211}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\Source\Filters\FilterGraph.cpp">
@@ -2087,6 +2090,33 @@
     </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\include_juce_video.cpp">
       <Filter>JUCE Library Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\PbModules\Mapping.cpp">
+      <Filter>AudioPluginHost\Source\PbModules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\PbModules\MappingEntryMidi.cpp">
+      <Filter>AudioPluginHost\Source\PbModules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\PbModules\MappingsDialog.cpp">
+      <Filter>AudioPluginHost\Source\PbModules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\PbModules\MappingSlider.cpp">
+      <Filter>AudioPluginHost\Source\PbModules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\PbModules\MidiCcAlertWindow.cpp">
+      <Filter>AudioPluginHost\Source\PbModules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\PbModules\MidiMappingManager.cpp">
+      <Filter>AudioPluginHost\Source\PbModules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\PbModules\TapTempoHelper.cpp">
+      <Filter>AudioPluginHost\Source\PbModules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\PbModules\PropertiesSingleton.cpp">
+      <Filter>AudioPluginHost\Source\PbModules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\PbModules\JuceHelperStuff.cpp">
+      <Filter>AudioPluginHost\Source\PbModules</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -3973,6 +4003,33 @@
     </ClInclude>
     <ClInclude Include="..\..\JuceLibraryCode\JuceHeader.h">
       <Filter>JUCE Library Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\PbModules\Mapping.h">
+      <Filter>AudioPluginHost\Source\PbModules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\PbModules\MappingEntryMidi.h">
+      <Filter>AudioPluginHost\Source\PbModules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\PbModules\MappingsDialog.h">
+      <Filter>AudioPluginHost\Source\PbModules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\PbModules\MappingSlider.h">
+      <Filter>AudioPluginHost\Source\PbModules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\PbModules\MidiCcAlertWindow.h">
+      <Filter>AudioPluginHost\Source\PbModules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\PbModules\MidiMappingManager.h">
+      <Filter>AudioPluginHost\Source\PbModules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\PbModules\TapTempoHelper.h">
+      <Filter>AudioPluginHost\Source\PbModules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\PbModules\PropertiesSingleton.h">
+      <Filter>AudioPluginHost\Source\PbModules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\PbModules\JuceHelperStuff.h">
+      <Filter>AudioPluginHost\Source\PbModules</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
