@@ -30,6 +30,7 @@
 #include "InternalFilters.h"
 #include "../UI/GraphEditorPanel.h"
 
+#include "MidiParameterControl.h"
 
 //==============================================================================
 FilterGraph::FilterGraph (AudioPluginFormatManager& fm)
@@ -111,6 +112,19 @@ void FilterGraph::addFilterCallback (AudioPluginInstance* instance, const String
     }
     else
     {
+		if (instance->getName() == "MidiParameterControl")
+		{
+			if (auto* plugin = dynamic_cast<MidiParameterControl*> (instance))
+			{
+				plugin->SetAudioProcessorGraph(&graph);
+			}
+			else
+			{
+				// Well this is not good because name was "MidiParameterControl"
+			}
+
+		}
+
         instance->enableAllBuses();
 
         if (auto node = graph.addNode (instance))
@@ -164,11 +178,8 @@ PluginWindow* FilterGraph::getOrCreateWindowFor (AudioProcessorGraph::Node* node
     {
         if (auto* plugin = dynamic_cast<AudioPluginInstance*> (processor))
         {
-            auto description = plugin->getPluginDescription();
-
-            if (description.pluginFormatName == "Internal")
+            if (!plugin->hasEditor())
             {
-                getCommandManager().invokeDirectly (CommandIDs::showAudioSettings, false);
                 return nullptr;
             }
         }
