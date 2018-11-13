@@ -38,6 +38,11 @@ class MidiParameterControl : public InternalPlugin
 public:
 	MidiParameterControl(const PluginDescription& descr);
 
+	bool acceptsMidi() const override { return true; }
+	bool producesMidi() const override { return false; }
+	void getStateInformation(juce::MemoryBlock&) override {}
+	void setStateInformation(const void*, int) override {}
+
 	void SetAudioProcessorGraph(AudioProcessorGraph*);
 	AudioProcessorGraph* GetAudioProcessorGraph() { return graph; };
 
@@ -48,7 +53,13 @@ public:
 
 	static PluginDescription getPluginDescription()
 	{
-		return InternalPlugin::getPluginDescription(getIdentifier(), false, false);
+		auto desc = InternalPlugin::getPluginDescription(getIdentifier(), false, false);
+
+		//Override with no audio channels
+		desc.numInputChannels = 0;
+		desc.numOutputChannels = 0;
+
+		return desc;
 	}
 
 	void prepareToPlay(double newSampleRate, int) override;

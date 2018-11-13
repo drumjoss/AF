@@ -30,9 +30,8 @@
 #include "MidiParameterControl.h"
 
 //==============================================================================
-MidiParameterControl::MidiParameterControl(const PluginDescription& descr) : InternalPlugin(descr)
+MidiParameterControl::MidiParameterControl(const PluginDescription& descr) : InternalPlugin(descr, AudioChannelSet::disabled())
 {
-	hasMidi = true;
 	graph = nullptr;
 	samplesSinceStart = 0;
 }
