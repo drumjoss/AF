@@ -9,4 +9,3 @@ Getting Started:
 Building AudioPluginHost:
 - Open JUCE\extras\AudioPluginHost\Builds\VisualStudio2017 (or any other build)
 - Build AudioPluginHost_App.vcxproj
-- Warning: WindowsTargetPlatformVersion might need to be manually replaced in AudioPluginHost_App.vcxproj
